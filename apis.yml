@@ -1,8 +1,28 @@
 aid: mistralai
-name: Mistralai
-description: Mistralai is a company surfaced as a portfolio company of lightspeed-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+name: Mistral AI
+description: >-
+  Mistral AI is a Paris-based artificial intelligence company that develops and
+  operates frontier open-weight and commercial large language models, exposed to
+  developers and enterprises through La Plateforme (api.mistral.ai). The developer
+  platform provides an OpenAI-compatible REST surface spanning chat completions,
+  embeddings, content moderation, agents and tool-use, fill-in-the-middle code
+  completion (Codestral), document OCR, audio transcription (Voxtral), fine-tuning,
+  file management, model management, and asynchronous batch inference. Access is via
+  a bearer API key issued from the console, with first-party Python and TypeScript
+  SDKs, published pricing, a status page, and a dated changelog.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mistralai.png
 url: https://raw.githubusercontent.com/api-evangelist/mistralai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +32,255 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Artificial Intelligence
+- Large Language Models
+- Generative AI
+- Machine Learning
+- Chat
+- Embeddings
+- Agents
+- OCR
+- Fine-Tuning
+- Developer Platform
+apis:
+- name: Mistral AI Chat API
+  description: Chat completion API for conversational AI using Mistral's language models,
+    with function calling, streaming, and JSON / structured output.
+  humanURL: https://docs.mistral.ai/api/
+  baseURL: https://api.mistral.ai/v1
+  tags:
+  - Artificial Intelligence
+  - Chat
+  - Conversational AI
+  - Large Language Models
+  - NLP
+  properties:
+  - type: Documentation
+    url: https://docs.mistral.ai/api/
+  - type: APIEndpoint
+    url: https://docs.mistral.ai/api/endpoint/chat
+- name: Mistral Embeddings API
+  description: Generate vector embeddings for text and code for retrieval, clustering,
+    classification, and semantic search.
+  humanURL: https://docs.mistral.ai/api/#embeddings
+  baseURL: https://api.mistral.ai/v1
+  tags:
+  - Embeddings
+  - Machine Learning
+  - Semantic Search
+  - Vector Search
+  properties:
+  - type: Documentation
+    url: https://docs.mistral.ai/api/#embeddings
+  - type: APIEndpoint
+    url: https://docs.mistral.ai/api/endpoint/embeddings
+- name: Mistral Moderation API
+  description: Content moderation and classification API for detecting harmful content
+    across nine safety categories for text and chat.
+  humanURL: https://docs.mistral.ai/api/#moderation
+  baseURL: https://api.mistral.ai/v1
+  tags:
+  - Classification
+  - Compliance
+  - Content Moderation
+  - Safety
+  properties:
+  - type: Documentation
+    url: https://docs.mistral.ai/capabilities/moderation
+  - type: APIEndpoint
+    url: https://docs.mistral.ai/api/endpoint/classifiers
+- name: Mistral AI Agents API
+  description: Agent completions API for building AI agents that handle complex tasks,
+    maintain context, coordinate actions, and use tools and connectors.
+  humanURL: https://docs.mistral.ai/api/endpoint/agents
+  baseURL: https://api.mistral.ai/v1
+  tags:
+  - Agents
+  - Artificial Intelligence
+  - Automation
+  - Function Calling
+  - Tools
+  properties:
+  - type: Documentation
+    url: https://docs.mistral.ai/agents/agents
+  - type: APIEndpoint
+    url: https://docs.mistral.ai/api/endpoint/agents
+- name: Mistral AI FIM API
+  description: Fill-in-the-Middle code completion API powered by Codestral for generating
+    code between a prompt and suffix across 80+ languages.
+  humanURL: https://docs.mistral.ai/api/endpoint/fim
+  baseURL: https://api.mistral.ai/v1
+  tags:
+  - Code Completion
+  - Code Generation
+  - Codestral
+  - Fill in the Middle
+  - Programming
+  properties:
+  - type: Documentation
+    url: https://docs.mistral.ai/capabilities/code_generation
+  - type: APIEndpoint
+    url: https://docs.mistral.ai/api/endpoint/fim
+- name: Mistral AI OCR API
+  description: Document AI / OCR API that extracts text, images, tables, and structured
+    data from documents and PDFs with complex layouts.
+  humanURL: https://docs.mistral.ai/api/endpoint/ocr
+  baseURL: https://api.mistral.ai/v1
+  tags:
+  - Document AI
+  - Document Understanding
+  - OCR
+  - PDF Processing
+  - Text Extraction
+  properties:
+  - type: Documentation
+    url: https://docs.mistral.ai/capabilities/document_ai/document_ai_overview
+  - type: APIEndpoint
+    url: https://docs.mistral.ai/api/endpoint/ocr
+- name: Mistral AI Fine-Tuning API
+  description: Fine-tuning API for customizing Mistral models on your own datasets,
+    supporting text, vision, and classifier fine-tuning.
+  humanURL: https://docs.mistral.ai/api/endpoint/fine-tuning
+  baseURL: https://api.mistral.ai/v1
+  tags:
+  - Fine-Tuning
+  - Machine Learning
+  - Model Customization
+  - Training
+  properties:
+  - type: Documentation
+    url: https://docs.mistral.ai/capabilities/finetuning/text-vision-finetuning
+  - type: APIEndpoint
+    url: https://docs.mistral.ai/api/endpoint/fine-tuning
+- name: Mistral AI Files API
+  description: File management API for uploading, retrieving, downloading, and deleting
+    files used across fine-tuning, batch, and OCR.
+  humanURL: https://docs.mistral.ai/api/endpoint/files
+  baseURL: https://api.mistral.ai/v1
+  tags:
+  - File Management
+  - Files
+  - Storage
+  - Upload
+  properties:
+  - type: Documentation
+    url: https://docs.mistral.ai/api/endpoint/files
+  - type: APIEndpoint
+    url: https://docs.mistral.ai/api/endpoint/files
+- name: Mistral AI Models API
+  description: Models management API for listing available models, retrieving model
+    details, and managing fine-tuned models.
+  humanURL: https://docs.mistral.ai/api/endpoint/models
+  baseURL: https://api.mistral.ai/v1
+  tags:
+  - Artificial Intelligence
+  - Model Management
+  - Models
+  properties:
+  - type: Documentation
+    url: https://docs.mistral.ai/api/endpoint/models
+  - type: APIEndpoint
+    url: https://docs.mistral.ai/api/endpoint/models
+- name: Mistral AI Batch API
+  description: Batch inference API for processing up to one million requests asynchronously
+    at reduced cost across most endpoints.
+  humanURL: https://docs.mistral.ai/api/endpoint/batch
+  baseURL: https://api.mistral.ai/v1
+  tags:
+  - Async
+  - Batch Processing
+  - Bulk Operations
+  - Cost Optimization
+  properties:
+  - type: Documentation
+    url: https://docs.mistral.ai/capabilities/batch
+  - type: APIEndpoint
+    url: https://docs.mistral.ai/api/endpoint/batch
+- name: Mistral AI Audio Transcription API
+  description: Audio transcription API powered by Voxtral for speech-to-text with
+    diarization, word-level timestamps, and streaming.
+  humanURL: https://docs.mistral.ai/api/endpoint/audio/transcriptions
+  baseURL: https://api.mistral.ai/v1
+  tags:
+  - Audio
+  - Diarization
+  - Speech to Text
+  - Transcription
+  - Voxtral
+  properties:
+  - type: Documentation
+    url: https://docs.mistral.ai/capabilities/audio_and_transcription
+  - type: APIEndpoint
+    url: https://docs.mistral.ai/api/endpoint/audio/transcriptions
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/mistralai-domain-security.yml
+- type: Website
+  url: https://mistral.ai
+- type: DeveloperPortal
+  url: https://docs.mistral.ai/api
+- type: Documentation
+  url: https://docs.mistral.ai
+- type: APIReference
+  url: https://docs.mistral.ai/api/
+- type: GettingStarted
+  url: https://docs.mistral.ai/getting-started/quickstart
+- type: Support
+  url: mailto:support@mistral.ai
+- type: Blog
+  url: https://mistral.ai/news
+- type: GitHubOrganization
+  url: https://github.com/mistralai
+- type: Pricing
+  url: https://mistral.ai/pricing
+- type: SignUp
+  url: https://console.mistral.ai
+- type: TermsOfService
+  url: https://mistral.ai/terms/
+- type: PrivacyPolicy
+  url: https://mistral.ai/privacy/
+- type: StatusPage
+  url: https://status.mistral.ai
+- type: ChangeLog
+  url: https://docs.mistral.ai/getting-started/changelog
+- type: ChangeLog
+  url: changelog/mistralai-changelog.yml
+- type: Deprecation
+  url: https://docs.mistral.ai/getting-started/models/models_overview/
+- type: Twitter
+  url: https://twitter.com/MistralAI
+- type: LinkedIn
+  url: https://www.linkedin.com/company/mistralai
+- type: Discord
+  url: https://discord.gg/mistralai
+- type: SDKs
+  url: packages/mistralai-packages.yml
+- type: Packages
+  url: packages/mistralai-packages.yml
+- type: PythonSDK
+  url: https://github.com/mistralai/client-python
+- type: TypeScriptSDK
+  url: https://github.com/mistralai/client-ts
+- type: LLMsTxt
+  url: llms/mistralai-llms.txt
+- type: Authentication
+  url: authentication/mistralai-authentication.yml
+- type: Conventions
+  url: conventions/mistralai-conventions.yml
+- type: Lifecycle
+  url: lifecycle/mistralai-lifecycle.yml
+- type: Conformance
+  url: conformance/mistralai-conformance.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1
