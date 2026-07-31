@@ -1,0 +1,12 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.mistral.ai/getting-started/changelog
+scheme: dated
+current_api_version: v1
+note: >-
+  Mistral AI maintains a dated, human-readable changelog covering new model
+  releases, API capability additions (Agents, connectors, OCR, audio/Voxtral,
+  batch, structured output), and model deprecations/retirements. The live page is
+  the source of truth; individual entries are not mirrored here to avoid stale or
+  misquoted release notes.
+url: https://docs.mistral.ai/getting-started/changelog

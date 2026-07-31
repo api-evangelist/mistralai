@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.mistral.ai/getting-started/quickstart
+docs: https://docs.mistral.ai/api
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  scheme: bearer
+schemes:
+  - name: ApiKey
+    type: http
+    scheme: bearer
+    in: header
+    header: Authorization
+    format: "Authorization: Bearer $MISTRAL_API_KEY"
+    description: >-
+      All Mistral AI La Plateforme endpoints authenticate with a personal API key
+      issued from the console (https://console.mistral.ai) and sent as an
+      HTTP Bearer token in the Authorization header. There is no OAuth or OIDC
+      surface on the inference API.
+    sources: [https://docs.mistral.ai/getting-started/quickstart]
+notes: >-
+  Derived from Mistral AI public authentication documentation; this repo holds no
+  local OpenAPI, so the profile is captured from docs rather than a spec derive.

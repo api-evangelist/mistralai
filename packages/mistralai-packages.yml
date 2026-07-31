@@ -1,0 +1,18 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.mistral.ai/getting-started/clients
+packages:
+  - language: python
+    registry: pypi
+    name: mistralai
+    url: https://pypi.org/project/mistralai/
+    install: pip install mistralai
+    repo: https://github.com/mistralai/client-python
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@mistralai/mistralai"
+    url: https://www.npmjs.com/package/@mistralai/mistralai
+    install: npm install @mistralai/mistralai
+    repo: https://github.com/mistralai/client-ts
+    official: true

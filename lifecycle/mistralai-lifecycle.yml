@@ -1,0 +1,16 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.mistral.ai/getting-started/changelog
+versioning:
+  scheme: uri-path
+  current: v1
+  model_versioning: >-
+    Model capabilities are versioned by model id; `-latest` aliases track the newest
+    snapshot while dated ids pin a specific weight release.
+deprecation:
+  policy_url: https://docs.mistral.ai/getting-started/models/models_overview/
+  note: >-
+    Mistral AI publishes a legacy/deprecated models table with announced
+    deprecation and retirement dates in the models overview and changelog.
+status_page: https://status.mistral.ai
+changelog: https://docs.mistral.ai/getting-started/changelog

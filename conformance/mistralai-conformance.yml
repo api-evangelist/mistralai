@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: derived
+source: Mistral AI public API documentation + authentication model
+standards:
+  - id: openai-chat-completions-compat
+    conforms: true
+    evidence: >-
+      The /v1/chat/completions endpoint mirrors the OpenAI Chat Completions
+      request/response schema, enabling drop-in use of OpenAI SDKs.
+  - id: oauth2
+    conforms: false
+    evidence: Inference API authenticates with a bearer API key, not OAuth2.
+  - id: openid-connect
+    conforms: false
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Errors use an OpenAI-style JSON envelope, not application/problem+json.
+  - id: server-sent-events-streaming
+    conforms: true
+    evidence: Streaming responses use SSE via the stream parameter.
+  - id: gdpr
+    conforms: true
+    evidence: >-
+      Mistral AI is an EU (French) provider that processes data under GDPR; see the
+      privacy policy at https://mistral.ai/privacy/.
+notes: >-
+  Standards asserted from public documentation and the authentication model. No
+  Compliance pointer is emitted here because a published certification program
+  (e.g. SOC 2 / ISO 27001) is captured in security/ trust-center when verified.

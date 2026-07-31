@@ -1,0 +1,48 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.mistral.ai/api
+docs: https://docs.mistral.ai/getting-started/quickstart
+authentication:
+  style: bearer-api-key
+  header: Authorization
+  ref: authentication/mistralai-authentication.yml
+base_url: https://api.mistral.ai/v1
+compatibility:
+  openai_compatible: true
+  note: >-
+    The Chat Completions endpoint mirrors the OpenAI Chat Completions request/response
+    shape, so OpenAI SDKs can target api.mistral.ai/v1 by swapping the base URL and key.
+streaming:
+  supported: true
+  style: server-sent-events
+  param: stream
+structured_output:
+  json_mode: true
+  response_format: '{"type": "json_object"}'
+  custom_schema: true
+idempotency:
+  supported: false
+  note: >-
+    Mistral AI does not document an idempotency-key header on the inference API.
+    No Idempotency pointer is emitted.
+pagination:
+  documented: partial
+  note: >-
+    List endpoints (files, fine-tuning jobs, batch jobs) accept page / page_size
+    query parameters; the core inference endpoints are not paginated.
+error_envelope:
+  format: json
+  note: >-
+    Errors return a JSON body with an object/message/type/code shape (OpenAI-style),
+    not RFC 9457 application/problem+json.
+rate_limiting:
+  signaled: true
+  note: >-
+    Per-workspace request-per-second and tokens-per-minute limits apply; 429 is
+    returned on exhaustion. See rate-limits and pricing tier documentation.
+versioning:
+  scheme: uri-path
+  current: v1
+  model_pinning: >-
+    Model versions are pinned by dated model ids (e.g. mistral-large-latest vs a
+    dated snapshot); model retirement is announced via the changelog.
