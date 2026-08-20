@@ -38,6 +38,18 @@ tags:
 - Artificial Intelligence
 - Large Language Models
 - Generative AI
+- Machine-Learning
+- Chat
+- Embeddings
+- Agents
+- OCR
+- Fine-Tuning
+- Developer Platform
+tags_raw:
+- Company
+- Artificial Intelligence
+- Large Language Models
+- Generative AI
 - Machine Learning
 - Chat
 - Embeddings
@@ -68,6 +80,11 @@ apis:
   humanURL: https://docs.mistral.ai/api/#embeddings
   baseURL: https://api.mistral.ai/v1
   tags:
+  - Embeddings
+  - Machine-Learning
+  - Semantic Search
+  - Vector Search
+  tags_raw:
   - Embeddings
   - Machine Learning
   - Semantic Search
@@ -147,6 +164,11 @@ apis:
   baseURL: https://api.mistral.ai/v1
   tags:
   - Fine-Tuning
+  - Machine-Learning
+  - Model Customization
+  - Training
+  tags_raw:
+  - Fine-Tuning
   - Machine Learning
   - Model Customization
   - Training
@@ -161,6 +183,11 @@ apis:
   humanURL: https://docs.mistral.ai/api/endpoint/files
   baseURL: https://api.mistral.ai/v1
   tags:
+  - File Management
+  - File
+  - Storage
+  - Upload
+  tags_raw:
   - File Management
   - Files
   - Storage
@@ -205,6 +232,12 @@ apis:
   humanURL: https://docs.mistral.ai/api/endpoint/audio/transcriptions
   baseURL: https://api.mistral.ai/v1
   tags:
+  - Audio
+  - Diarization
+  - Speech-to-Text
+  - Transcription
+  - Voxtral
+  tags_raw:
   - Audio
   - Diarization
   - Speech to Text
