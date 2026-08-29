@@ -10,6 +10,17 @@ description: >-
   file management, model management, and asynchronous batch inference. Access is via
   a bearer API key issued from the console, with first-party Python and TypeScript
   SDKs, published pricing, a status page, and a dated changelog.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
